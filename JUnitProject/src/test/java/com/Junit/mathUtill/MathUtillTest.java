@@ -21,11 +21,13 @@ class MathUtillTest {
 	@Nested
 	class AddClass {
 		@Test
+		@DisplayName("add positive numbers")
 		void addTestPositive() {
 			
 			assertEquals(2, mathUtill.add(1, 1));
 		}
 		@Test
+		@DisplayName("add negative numbers")
 		void addTestNegative() {
 			
 			assertEquals(-2, mathUtill.add(-1, -1));
