@@ -19,22 +19,22 @@ class MathUtillTest {
 		mathUtill = new MathUtill();
 	}
 
-//	@BeforeAll
-//	void initimp() {
-//		System.out.println("mathUtill");
-//	}
-//
-//	@AfterEach
-//	void cleanUp() {
-//		System.out.println("@AfterEach");
-//		
-//	}
-//	
-//	@AfterAll
-//	void cleanUpAll() {
-//		System.out.println("@AfterAll");
-//		
-//	}
+	@BeforeAll
+	void initimp() {
+		System.out.println("mathUtill");
+	}
+
+	@AfterEach
+	void cleanUp() {
+		System.out.println("@AfterEach");
+		
+	}
+	
+	@AfterAll
+	void cleanUpAll() {
+		System.out.println("@AfterAll");
+		
+	}
 	
 	
 	@Test
