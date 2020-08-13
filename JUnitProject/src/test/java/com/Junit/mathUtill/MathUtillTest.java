@@ -3,6 +3,7 @@ package com.Junit.mathUtill;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 import static org.junit.Assume.assumeTrue;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.*;
@@ -79,4 +80,19 @@ fail("this method should failed");
 		//assertEquals(2,mathUtill.add(1, 1));
 	}
 
+	
+	@Test
+	@DisplayName("multiply methods wising assert all")
+	void mulTestForAssertAll() {
+		assertAll(
+				
+				()->assertEquals(100, mathUtill.mul(10, 10)),
+				()->assertEquals(200, mathUtill.mul(20, 10)),
+				()->assertEquals(-4, mathUtill.mul(2, -2))
+				);
+		
+	}
+	
+	
+	
 }
