@@ -32,6 +32,18 @@ class MathUtillTest {
 		assertEquals(2,mathUtill.add(1, 1));
 	}
 	
+	@Test
+	void subTest() {
+		
+		assertEquals(0,mathUtill.sub(1, 1));
+	}
+	
+	@Test
+	void mulTest() {
+		
+		assertEquals(1,mathUtill.mul(1, 1));
+	}
+	
 	
 	@Test
 	void divTest() {
