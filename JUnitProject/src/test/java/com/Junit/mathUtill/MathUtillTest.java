@@ -1,10 +1,10 @@
 package com.Junit.mathUtill;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
@@ -15,18 +15,30 @@ class MathUtillTest {
 
 	@BeforeEach
 	void init() {
+		System.out.println("@BeforeEach");
 		mathUtill = new MathUtill();
 	}
 
-	@BeforeAll
-	void initimp() {
-		System.out.println("mathUtill");
-	}
-
-
+//	@BeforeAll
+//	void initimp() {
+//		System.out.println("mathUtill");
+//	}
+//
+//	@AfterEach
+//	void cleanUp() {
+//		System.out.println("@AfterEach");
+//		
+//	}
+//	
+//	@AfterAll
+//	void cleanUpAll() {
+//		System.out.println("@AfterAll");
+//		
+//	}
 	
 	
 	@Test
+	@DisplayName("Testing add method")
 	void addTest() {
 		
 		assertEquals(2,mathUtill.add(1, 1));
