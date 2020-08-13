@@ -3,6 +3,7 @@ package com.Junit.mathUtill;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -17,6 +18,10 @@ class MathUtillTest {
 		mathUtill = new MathUtill();
 	}
 
+	@BeforeAll
+	void initimp() {
+		System.out.println("mathUtill");
+	}
 
 
 	
@@ -25,6 +30,13 @@ class MathUtillTest {
 	void addTest() {
 		
 		assertEquals(2,mathUtill.add(1, 1));
+	}
+	
+	
+	@Test
+	void divTest() {
+		assertThrows(Exception.class, ()->mathUtill.div(1, 0));
+		//assertEquals(2,mathUtill.add(1, 1));
 	}
 
 }
