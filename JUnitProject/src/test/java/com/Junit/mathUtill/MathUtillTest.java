@@ -1,6 +1,7 @@
 package com.Junit.mathUtill;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.*;
@@ -60,6 +61,14 @@ class MathUtillTest {
 	@Test
 	void divTest() {
 		assertThrows(Exception.class, ()->mathUtill.div(1, 0));
+		//assertEquals(2,mathUtill.add(1, 1));
+	}
+	
+	@Test
+	@DisplayName("this method always fail")
+	@Disabled
+	void failTest() {
+fail("this method should failed");
 		//assertEquals(2,mathUtill.add(1, 1));
 	}
 
