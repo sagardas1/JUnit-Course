@@ -10,5 +10,6 @@ public class MathUtill {
 	public int mul(int a,int b) {return a*b;}
 	
 	public int div(int a,int b) {return a/b;}
+	public int additionArray(int a,int b) {return a/b;}
 
 }
